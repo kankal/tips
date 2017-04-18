@@ -5,9 +5,8 @@ checking which window manager is currently running
 ##############################################################
 
 changing number of desktops in openbox
-    vim ~/.config/openbox/lxde-rc.xml
-    change the <desktops><number></number></desktops>
-
+    right click and open the context menu and then ObConf -> Desktops
+    
 ##############################################################
 
 changing user prompt color to cyan and purple
