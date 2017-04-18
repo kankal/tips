@@ -1,3 +1,7 @@
+check which window manager is currently running
+    sudo apt-get install wmctrl
+    wmctrl -m
+
 change number of desktops in openbox
     vim ~/.config/openbox/lxde-rc.xml
-    change the <desktops><number></number></desktops>    
+    change the <desktops><number></number></desktops>
