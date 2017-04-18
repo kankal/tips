@@ -1,0 +1,3 @@
+change number of desktops in openbox
+    vim ~/.config/openbox/lxde-rc.xml
+    change the <desktops><number></number></desktops>    
