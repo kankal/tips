@@ -34,3 +34,8 @@ changing root prompt color to red and purple
 
 restore to default .bashrc file
     /bin/cp /etc/skel/.bashrc ~/
+
+##############################################################
+
+open desktop preference
+    pcmanfm --desktop-pref
