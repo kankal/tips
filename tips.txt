@@ -1,7 +1,15 @@
-check which window manager is currently running
+checking which window manager is currently running
     sudo apt-get install wmctrl
     wmctrl -m
 
-change number of desktops in openbox
+changing number of desktops in openbox
     vim ~/.config/openbox/lxde-rc.xml
     change the <desktops><number></number></desktops>
+
+changing root prompt color
+    http://www.bashguru.com/2010/01/shell-colors-colorizing-shell-scripts.html
+    in short:
+        start red:          \[\033[01;31m\]
+        stop current color: \[\033[00m\]
+    in order to change the prompt color modify the line defining PS1 inside /root/.bashrc to
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[00m\]@\[\033[01;31m\]\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
