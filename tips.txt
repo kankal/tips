@@ -32,10 +32,18 @@ changing root prompt color to red and purple
 
 ##############################################################
 
-restore to default .bashrc file
+restoring to default .bashrc file
     /bin/cp /etc/skel/.bashrc ~/
 
 ##############################################################
 
-open desktop preference
+openning desktop preference
     pcmanfm --desktop-pref
+    
+##############################################################
+
+finding system's c library version
+    ldd comes in handy, since any working, dynamically linked executable on the system (e.g., almost everything in /usr/bin)
+    will link to the C library.
+        ldd /usr/bin/touch
+    info in the line containing "libc.so.6"
