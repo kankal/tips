@@ -43,7 +43,6 @@ openning desktop preference
 ##############################################################
 
 finding system's c library version
-    ldd comes in handy, since any working, dynamically linked executable on the system (e.g., almost everything in /usr/bin)
-    will link to the C library.
-        ldd /usr/bin/touch
-    info in the line containing "libc.so.6"
+    run the ldd (list dynamic dependencies) program against an executable linked dynamically against glibc (most executables
+    are linked in this manner)   
+        ldd /usr/bin/touch | grep libc
