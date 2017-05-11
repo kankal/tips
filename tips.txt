@@ -46,3 +46,24 @@ finding system's c library version
     run the ldd (list dynamic dependencies) program against an executable linked dynamically against glibc (most executables
     are linked in this manner)   
         ldd /usr/bin/touch | grep libc
+
+##############################################################
+
+installing cgdb
+    Installing cdgb
+    cd into /usr/local
+    sudo git clone git://github.com/cgdb/cgdb.git
+    sudo cd cgdb
+    sudo apt-get install automake
+    sudo ./autogen.sh
+    ./configure --prefix=/usr/local
+    sudo apt-get install libncurses5-dev
+    sudo apt-get install flex
+    sudo apt-get install bison
+    sudo apt-get install texinfo
+    sudo apt-get install help2man
+    sudo apt-get install libreadline-gplv2-dev
+    sudo ./configure --prefix=/usr/local
+    sudo apt-get install make
+    make
+    sudo make install
