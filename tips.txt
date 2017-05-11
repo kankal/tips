@@ -79,4 +79,4 @@ installing cgdb
 ##############################################################
 
 figuring out to which /dev a usb is attached
-    look at the end of the dmesg command
+    look at the output of the dmesg command
