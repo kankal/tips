@@ -80,3 +80,7 @@ installing cgdb
 
 figuring out to which /dev a usb is attached
     look at the output of the dmesg command
+
+##############################################################
+
+sudo dd if=input_file of=output_file bs=4M conv=sync
