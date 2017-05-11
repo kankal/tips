@@ -1,3 +1,10 @@
+adding a user to sudoers file
+    su (type the password)
+    visudo
+        after "User privilege specification" create a new line similar to the one related to root 
+
+##############################################################
+
 checking which window manager is currently running
     sudo apt-get install wmctrl
     wmctrl -m
