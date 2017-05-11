@@ -1,4 +1,4 @@
-adding a user to sudoers file
+padding a user to sudoers file
     su (type the password)
     visudo
         after "User privilege specification" create a new line similar to the one related to root 
@@ -18,14 +18,15 @@ changing number of desktops in openbox
 
 changing user prompt color to cyan and purple
 http://tldp.org/LDP/abs/html/sample-bashrc.html
-    uncomment the line
-        #force_color_prompt=yes
-    change to the following
-        if [ "$color_prompt" = yes ]; then
-            PS1='${debian_chroot:+($debian_chroot)}\
-            \[\033[01;36m\]\u\[\033[00m\]@\
-            \[\033[01;36m\]\h\[\033[00m\]:\
-            \[\033[01;35m\]\w\[\033[00m\]\$ '
+    in ~.bashrc
+        uncomment the line
+            #force_color_prompt=yes
+        change to the following
+            if [ "$color_prompt" = yes ]; then
+                PS1='${debian_chroot:+($debian_chroot)}\
+                \[\033[01;36m\]\u\[\033[00m\]@\
+                \[\033[01;36m\]\h\[\033[00m\]:\
+                \[\033[01;35m\]\w\[\033[00m\]\$ '
 
 ##############################################################
 
