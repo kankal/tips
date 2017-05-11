@@ -84,4 +84,4 @@ figuring out to which /dev a usb is attached
 ##############################################################
 
 copying the downloaded iso into the usb (assuming usb is attached to /dev/sdc)
-    sudo dd if=~/Downloads/blahblah.iso of=/dev/sdc bs=4M conv=sync
+    sudo dd if=~/Downloads/blahblah.iso of=/dev/sdc bs=4M; sync
